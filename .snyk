@@ -1,0 +1,34 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - web3-react > @0x/subproviders > @0x/assert > @0x/utils > lodash:
+        patched: '2023-05-24T22:43:09.848Z'
+    - web3-react > @0x/subproviders > ganache-core > ethereumjs-block > async > lodash:
+        patched: '2023-05-24T22:43:09.848Z'
+    - '@walletconnect/web3-subprovider > web3-provider-engine > eth-json-rpc-filters > eth-json-rpc-middleware > json-rpc-engine > @babel/preset-env > @babel/plugin-transform-block-scoping > lodash':
+        patched: '2023-05-24T22:43:09.848Z'
+    - '@walletconnect/web3-subprovider > web3-provider-engine > eth-json-rpc-filters > eth-json-rpc-middleware > json-rpc-engine > @babel/preset-env > @babel/plugin-transform-modules-amd > @babel/helper-module-transforms > lodash':
+        patched: '2023-05-24T22:43:09.848Z'
+    - web3-react > @0x/subproviders > ganache-core > web3-provider-engine > eth-block-tracker > json-rpc-engine > babel-preset-env > babel-plugin-transform-es2015-block-scoping > lodash:
+        patched: '2023-05-24T22:43:09.848Z'
+    - web3-react > @0x/subproviders > ganache-core > web3-provider-engine > eth-block-tracker > json-rpc-engine > babelify > babel-core > lodash:
+        patched: '2023-05-24T22:43:09.848Z'
+    - web3-react > @0x/subproviders > ganache-core > web3-provider-engine > eth-block-tracker > json-rpc-engine > babel-preset-env > babel-plugin-transform-es2015-classes > babel-helper-define-map > lodash:
+        patched: '2023-05-24T22:43:09.848Z'
+    - web3-react > @0x/subproviders > ganache-core > web3-provider-engine > eth-block-tracker > json-rpc-engine > babel-preset-env > babel-plugin-transform-es2015-sticky-regex > babel-helper-regex > lodash:
+        patched: '2023-05-24T22:43:09.848Z'
+    - web3-react > @0x/subproviders > ganache-core > web3-provider-engine > eth-block-tracker > json-rpc-engine > babelify > babel-core > babel-generator > lodash:
+        patched: '2023-05-24T22:43:09.848Z'
+    - web3-react > @0x/subproviders > ganache-core > web3-provider-engine > eth-block-tracker > json-rpc-engine > babelify > babel-core > babel-register > lodash:
+        patched: '2023-05-24T22:43:09.848Z'
+    - react-scripts > jest > jest-cli > @jest/core > @jest/reporters > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2023-05-24T22:43:09.848Z'
+    - web3-react > @0x/subproviders > ganache-core > web3-provider-engine > eth-block-tracker > json-rpc-engine > babel-preset-env > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-helper-function-name > babel-template > lodash:
+        patched: '2023-05-24T22:43:09.848Z'
+    - web3-react > @0x/subproviders > ganache-core > web3-provider-engine > eth-block-tracker > json-rpc-engine > babel-preset-env > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-helper-function-name > babel-helper-get-function-arity > babel-types > lodash:
+        patched: '2023-05-24T22:43:09.848Z'
+    - web3-react > @0x/subproviders > ganache-core > web3-provider-engine > eth-block-tracker > json-rpc-engine > babel-preset-env > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-helper-function-name > babel-template > babel-traverse > lodash:
+        patched: '2023-05-24T22:43:09.848Z'

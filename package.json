@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@walletconnect/web3-subprovider": "^1.0.0-beta.25",
-    "ethers": "^4.0.27",
+    "@walletconnect/web3-subprovider": "^1.0.0",
+    "ethers": "^4.0.49",
     "http-proxy-middleware": "^0.19.1",
     "qrcode.react": "^0.9.3",
     "react": "^16.8.6",
@@ -15,8 +15,9 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "5.0.0",
     "react-tilt": "^0.1.4",
-    "styled-components": "^5.0.0-beta.0",
-    "web3-react": "^5.0.4"
+    "styled-components": "^5.0.0",
+    "web3-react": "^5.0.4",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "run-p start:**",
@@ -28,7 +29,9 @@
     "build:functions": "netlify-lambda build functions -c ./webpack.config.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "now-build": "react-scripts build"
+    "now-build": "react-scripts build",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -50,5 +53,6 @@
     "netlify-lambda": "^1.5.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.17.0"
-  }
+  },
+  "snyk": true
 }
