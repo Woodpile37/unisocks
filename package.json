@@ -16,7 +16,8 @@
     "react-scripts": "5.0.0",
     "react-tilt": "^0.1.4",
     "styled-components": "^5.0.0-beta.0",
-    "web3-react": "^5.0.4"
+    "web3-react": "^5.0.4",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "run-p start:**",
@@ -28,7 +29,9 @@
     "build:functions": "netlify-lambda build functions -c ./webpack.config.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "now-build": "react-scripts build"
+    "now-build": "react-scripts build",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -50,5 +53,6 @@
     "netlify-lambda": "^1.5.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.17.0"
-  }
+  },
+  "snyk": true
 }
